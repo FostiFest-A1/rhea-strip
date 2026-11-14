@@ -1,0 +1,24 @@
+{
+  "name": "@rhea/sdk",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "sideEffects": false,
+  "exports": {
+    ".": { "types": "./src/index.ts", "default": "./src/index.ts" },
+    "./pricing": { "types": "./src/pricing.ts", "default": "./src/pricing.ts" },
+    "./fake": { "types": "./src/fake/index.ts", "default": "./src/fake/index.ts" }
+  },
+  "scripts": {
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "near-api-js": "7.4.0",
+    "zod": "4.6.7"
+  },
+  "devDependencies": {
+    "typescript": "5.9.3",
+    "vitest": "5.1.0"
+  }
+}

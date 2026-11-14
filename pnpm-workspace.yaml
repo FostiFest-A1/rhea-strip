@@ -1,0 +1,11 @@
+packages:
+  - "packages/*"
+  - "apps/*"
+  - "scripts"
+  - "qa"
+allowBuilds:
+  esbuild: true
+minimumReleaseAgeExclude:
+  - framer-motion@14.11.1
+  - motion-dom@14.11.1
+  - motion@14.11.1

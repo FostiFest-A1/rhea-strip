@@ -1,0 +1,30 @@
+{
+  "mcpServers": {
+    "near-docs": {
+      "type": "http",
+      "url": "https://docs.near.org/mcp"
+    },
+    "context7": {
+      "type": "stdio",
+      "command": "npx",
+      "args": [
+        "-y",
+        "@upstash/context7-mcp@4.6.0"
+      ],
+      "env": {}
+    },
+    "playwright": {
+      "type": "stdio",
+      "command": "npx",
+      "args": [
+        "-y",
+        "@playwright/mcp@0.0.84",
+        "--browser",
+        "chrome",
+        "--headless",
+        "--isolated"
+      ],
+      "env": {}
+    }
+  }
+}

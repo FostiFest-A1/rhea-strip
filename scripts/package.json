@@ -1,0 +1,26 @@
+{
+  "name": "@rhea/scripts",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build:contracts": "tsx src/build-contracts.ts",
+    "deploy:testnet": "tsx src/deploy.ts",
+    "new-series": "tsx src/new-series.ts",
+    "demo:reset": "tsx src/new-series.ts --minutes 10 --seed",
+    "seed-maker": "tsx src/seed-maker.ts",
+    "keeper": "tsx src/keeper.ts",
+    "e2e:fake": "tsx src/e2e-fake.ts",
+    "e2e:testnet": "tsx src/e2e-testnet.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@rhea/sdk": "workspace:*",
+    "zod": "4.6.7"
+  },
+  "devDependencies": {
+    "@types/node": "^22.20.5",
+    "tsx": "4.23.15",
+    "typescript": "5.9.3"
+  }
+}

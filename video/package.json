@@ -1,0 +1,22 @@
+{
+  "name": "rhea-demo-video",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "studio": "remotion studio src/index.ts",
+    "render": "remotion render src/index.ts Demo out/rhea-strip-demo.mp4 --concurrency=2 --codec=h264 --crf=18",
+    "still": "remotion still src/index.ts Demo"
+  },
+  "dependencies": {
+    "@remotion/cli": "4.0.535",
+    "@remotion/google-fonts": "4.0.535",
+    "react": "19.2.3",
+    "react-dom": "19.2.3",
+    "remotion": "4.0.535"
+  },
+  "devDependencies": {
+    "@types/react": "19.2.3",
+    "typescript": "5.9.3"
+  }
+}

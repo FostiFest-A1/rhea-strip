@@ -1,0 +1,21 @@
+[package]
+name = "pt-token"
+description = "Rhea Strip principal token: NEP-141 minted and burned only by the vault"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+repository = "https://github.com/rhea-strip/rhea-strip"
+
+[lib]
+crate-type = ["cdylib", "rlib"]
+
+[dependencies]
+near-sdk.workspace = true
+near-contract-standards.workspace = true
+
+[dev-dependencies]
+near-sdk = { workspace = true, features = ["unit-testing"] }
+
+[lints]
+workspace = true

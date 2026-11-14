@@ -1,0 +1,26 @@
+{
+  "name": "rhea",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "packageManager": "pnpm@11.4.0",
+  "scripts": {
+    "build:contracts": "pnpm --filter @rhea/scripts run build:contracts",
+    "test:contracts": "cd contracts && cargo test --workspace",
+    "test:sdk": "pnpm --filter @rhea/sdk run test",
+    "typecheck": "pnpm --filter @rhea/sdk run typecheck && pnpm --filter @rhea/scripts run typecheck",
+    "dev": "NEXT_PUBLIC_RHEA_MODE=fake pnpm --filter web dev",
+    "dev:testnet": "pnpm --filter web dev:testnet",
+    "deploy:testnet": "pnpm --filter @rhea/scripts run deploy:testnet",
+    "new-series": "pnpm --filter @rhea/scripts run new-series",
+    "seed-maker": "pnpm --filter @rhea/scripts run seed-maker",
+    "keeper": "pnpm --filter @rhea/scripts run keeper",
+    "e2e:fake": "pnpm --filter @rhea/scripts run e2e:fake",
+    "e2e:testnet": "pnpm --filter @rhea/scripts run e2e:testnet",
+    "demo:reset": "pnpm --filter @rhea/scripts run demo:reset",
+    "test:qa": "pnpm --filter qa exec playwright test"
+  },
+  "devDependencies": {
+    "typescript": "5.9.3"
+  }
+}

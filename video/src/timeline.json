@@ -1,0 +1,201 @@
+{
+  "fps": 30,
+  "scenes": [
+    {
+      "id": "c01",
+      "label": "The problem",
+      "index": 1,
+      "audio": "audio/s01.mp3",
+      "audioSec": 11.728938,
+      "clip": "clips/c01.mp4",
+      "clipSec": 13.8,
+      "marks": [],
+      "text": "If you stake NEAR, your yield trickles in slowly, and you can't spend it before you earn it. Rhea Strip splits a staked NEAR token into principal and yield, and lets you sell the yield early.",
+      "lead": 0.35,
+      "tail": 0.6,
+      "frames": 380
+    },
+    {
+      "id": "c02",
+      "label": "What is mocked",
+      "index": 2,
+      "audio": "audio/s02.mp3",
+      "audioSec": 10.031,
+      "clip": "clips/c02.mp4",
+      "clipSec": 12.033333,
+      "marks": [],
+      "text": "This is a hackathon build on NEAR testnet. The token is a mock with the Meta Pool stNEAR interface, and a demo clock squeezes a year of yield into about an hour.",
+      "lead": 0.35,
+      "tail": 0.6,
+      "frames": 329
+    },
+    {
+      "id": "c03",
+      "label": "Connect",
+      "index": 3,
+      "audio": "audio/s03.mp3",
+      "audioSec": 8.359125,
+      "clip": "clips/c03.mp4",
+      "clipSec": 11.433333,
+      "marks": [],
+      "text": "Connect with a ready-funded demo account, or bring your own wallet. I'll use Alice. Every click from here is a real testnet transaction.",
+      "lead": 0.35,
+      "tail": 0.6,
+      "frames": 279
+    },
+    {
+      "id": "c04",
+      "label": "Strip",
+      "index": 4,
+      "audio": "audio/s04.mp3",
+      "audioSec": 14.367313,
+      "clip": "clips/c04.mp4",
+      "clipSec": 26.833333,
+      "marks": [
+        {
+          "label": "ws",
+          "t": 9.112
+        },
+        {
+          "label": "we",
+          "t": 20.537
+        }
+      ],
+      "text": "Ten staked NEAR goes into the vault. The app syncs the index, registers my tokens, and mints a principal token, PT, and a yield token, YT, of equal value. Ice is principal. Pink is yield.",
+      "lead": 0.35,
+      "tail": 0.6,
+      "frames": 460
+    },
+    {
+      "id": "c05",
+      "label": "Sell future yield",
+      "index": 5,
+      "audio": "audio/s05.mp3",
+      "audioSec": 19.14775,
+      "clip": "clips/c05.mp4",
+      "clipSec": 21.8,
+      "marks": [
+        {
+          "label": "ws",
+          "t": 13.328
+        },
+        {
+          "label": "we",
+          "t": 16.18
+        }
+      ],
+      "text": "Now the flagship move: selling yield I haven't earned yet. I choose the implied APY I'll accept, and the upfront price follows from the formula. A lower APY means less money now. I list five YT in the vault's offer book. No AMM, no fees, all-or-nothing fills.",
+      "lead": 0.35,
+      "tail": 0.6,
+      "frames": 603
+    },
+    {
+      "id": "c06",
+      "label": "A buyer",
+      "index": 6,
+      "audio": "audio/s06.mp3",
+      "audioSec": 12.43425,
+      "clip": "clips/c06.mp4",
+      "clipSec": 21.933333,
+      "marks": [
+        {
+          "label": "ws",
+          "t": 7.798
+        },
+        {
+          "label": "we",
+          "t": 15.774
+        }
+      ],
+      "text": "Bob is a second account who wants yield exposure. He buys the offer, paying in mstNEAR, and takes over the YT. Interest earned before the fill stays with Alice. Bob earns from now on.",
+      "lead": 0.35,
+      "tail": 0.6,
+      "frames": 402
+    },
+    {
+      "id": "c07",
+      "label": "Portfolio",
+      "index": 7,
+      "audio": "audio/s07.mp3",
+      "audioSec": 9.639125,
+      "clip": "clips/c07.mp4",
+      "clipSec": 16.466667,
+      "marks": [
+        {
+          "label": "ws",
+          "t": 7.694
+        },
+        {
+          "label": "we",
+          "t": 12.064
+        }
+      ],
+      "text": "Back on Alice's portfolio: her PT, the rest of her YT, and the sale proceeds waiting as a credit. One click withdraws them as mstNEAR.",
+      "lead": 0.35,
+      "tail": 0.6,
+      "frames": 318
+    },
+    {
+      "id": "c08",
+      "label": "Settle",
+      "index": 8,
+      "audio": "audio/s08.mp3",
+      "audioSec": 13.244063,
+      "clip": "clips/c08.mp4",
+      "clipSec": 41.266667,
+      "marks": [
+        {
+          "label": "ws",
+          "t": 0.245
+        },
+        {
+          "label": "we",
+          "t": 2.111
+        },
+        {
+          "label": "ws",
+          "t": 6.336
+        },
+        {
+          "label": "we",
+          "t": 12.235
+        },
+        {
+          "label": "ws",
+          "t": 15.049
+        },
+        {
+          "label": "we",
+          "t": 19.91
+        },
+        {
+          "label": "ws",
+          "t": 31.156
+        },
+        {
+          "label": "we",
+          "t": 35.488
+        }
+      ],
+      "text": "At maturity the series settles and the index freezes. PT redeems for the underlying at that index. The YT pays out the yield it accrued, and is burned. Bob claims only what accrued since his fill.",
+      "lead": 0.35,
+      "tail": 0.6,
+      "frames": 426
+    },
+    {
+      "id": "c09",
+      "label": "Rhea Strip",
+      "index": 9,
+      "audio": "audio/s09.mp3",
+      "audioSec": 10.684063,
+      "clip": "clips/c09.mp4",
+      "clipSec": 10.666667,
+      "marks": [],
+      "text": "Rhea Strip: split yield from principal, and trade either side. NEAR testnet, mock yield, not audited. The repo and a one-command test are in the post.",
+      "lead": 0.35,
+      "tail": 2.6,
+      "frames": 409
+    }
+  ],
+  "totalFrames": 3606
+}
